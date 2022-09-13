@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>http</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <button class="add-ticket btn">Добавить тикет</button>
+      <table class="table">
+        <tbody class="tbody"></tbody>
+      </table>
+      <form class="form form-ticket hidden">
+        <h3 class="form-title"></h3>
+        <div class="form-control">
+          <div><label for="name">Краткое описание</label></div>
+          <input name="name" id="name" class="input" type="text" required />
+        </div>
+        <div class="form-control">
+          <div><label for="description">Подробное описание</label></div>
+          <textarea
+            name="description"
+            id="description"
+            class="input"
+            type="text"
+            required
+          ></textarea>
+        </div>
+        <div class="form-footer">
+          <button type="submit" class="btn confirm-ticket text-form">
+            Сохранить
+          </button>
+          <button type="reset" class="btn cancel text-form">Отмена</button>
+        </div>
+      </form>
+      <form class="form form-confirm-delete hidden">
+        <h3 class="form-title">Удалить тикет</h3>
+        <span
+          >Вы уверены, что хотите удалить тикет? Это действие необратимо</span
+        >
+        <div class="form-footer">
+          <button type="submit" class="btn btn-confirm-delete text-form">
+            ОК
+          </button>
+          <button type="reset" class="btn cancel text-form">Отмена</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
